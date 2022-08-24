@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package pkg.gmc.mutants.model;
 
 import java.io.Serializable;
@@ -31,12 +27,41 @@ public class LogHistoryAPI implements Serializable{
     @Column(name = "ip")
     private String ip;
 
-    public Long getId() {
+    public LogHistoryAPI() {
+    }
+
+       public Long getId() {
         return id;
     }
 
     public void setId(Long id) {
         this.id = id;
     }
+
+    public char getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(char tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getDna() {
+        return dna;
+    }
+
+    public void setDna(String dna) {
+        this.dna = dna;
+    }
+
+    public String getIp() {
+        return ip;
+    }
+
+    public void setIp(String ip) {
+        this.ip = ip;
+    }
+    
+    
     
 }

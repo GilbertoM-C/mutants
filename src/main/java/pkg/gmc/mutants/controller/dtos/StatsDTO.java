@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package pkg.gmc.mutants.controller.dtos;
 
 /**
@@ -9,9 +5,10 @@ package pkg.gmc.mutants.controller.dtos;
  * @author gilberto
  */
 public class StatsDTO {
-    private Long count_mutant_dna ;
+
+    private Long count_mutant_dna;
     private Long count_human_dna;
-    private Float ratio;
+    private Double ratio;
 
     public StatsDTO() {
     }
@@ -32,13 +29,12 @@ public class StatsDTO {
         this.count_human_dna = count_human_dna;
     }
 
-    public Float getRatio() {
+    public Double getRatio() {
         return ratio;
     }
 
-    public void setRatio(Float ratio) {
-        this.ratio = ratio;
+    public void setRatio(Double ratio) {
+        this.ratio = Math.rint(ratio * 10) / 10;
     }
-    
-    
+
 }
