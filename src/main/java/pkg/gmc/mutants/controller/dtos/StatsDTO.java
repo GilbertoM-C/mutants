@@ -34,7 +34,7 @@ public class StatsDTO {
     }
 
     public void setRatio(Double ratio) {
-        this.ratio = Math.rint(ratio * 10) / 10;
+        this.ratio = ratio;
     }
 
 }

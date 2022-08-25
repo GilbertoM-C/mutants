@@ -16,7 +16,7 @@ public class LogHistoryAPI implements Serializable{
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private long id;
     
     @Column(name = "tipo")
     private char tipo;
@@ -34,7 +34,7 @@ public class LogHistoryAPI implements Serializable{
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
